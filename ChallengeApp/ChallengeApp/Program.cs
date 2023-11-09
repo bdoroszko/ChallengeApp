@@ -1,47 +1,20 @@
 ﻿string name = "Tomasz";
-string gender = "mężczyzna";
+string gender = "male";
 var age = 40;
-Console.WriteLine(name);
-Console.WriteLine(gender);
-Console.WriteLine(age);
 if (gender == "kobieta" && age < 30)
 {
-    Console.WriteLine("mężczyzna powyżej 30 lat");
+    Console.WriteLine("Kobieta ponizej 30 lat");
 }
-else
-{
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Jakiś facet nie w wieku 33 lat");
-}
-else
+else if (name == "Ewa" && age == 33)
 {
     Console.WriteLine("Ewa, lat 33");
 }
-if (age <= 18 && gender == "mężczyzna")
+else if (age < 18 && gender == "male")
 {
-    Console.WriteLine("Pełnoletnia Kobieta");
+    Console.WriteLine("Niepełnoletni mężczyzna");
 }
 else
 {
-    Console.WriteLine("Niepełnoletni Mężczyzna");
-}
-if (name == "Ewa")
-{
-    Console.WriteLine("Pani Ewa");
-}
-else if (gender == "kobieta")
-{
-    Console.WriteLine("Pani Ewa jest kobietą");
-}
-else if (age != 40)
-{
-    Console.WriteLine("Pani Ewa jest kobietą i nie ma 40 lat");
-}
-else
-{
-    Console.WriteLine("Pan " + name + " to " + gender + " i ma " + age + " lat ");
+    Console.WriteLine("Żaden z 3 warunków nie jest spełniony");
 }
 Console.ReadKey();
