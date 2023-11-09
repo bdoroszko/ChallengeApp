@@ -1,7 +1,7 @@
 ﻿string name = "Tomasz";
 string gender = "male";
 var age = 40;
-if (gender == "kobieta" && age < 30)
+if (gender == "female" && age < 30)
 {
     Console.WriteLine("Kobieta ponizej 30 lat");
 }
